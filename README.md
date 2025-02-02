@@ -1,3 +1,10 @@
+# WARNING
+That project is in totally start right now, very shallow in features.
+Things i plan adding over time:
+* Vertex color support(already coded but not active)
+* Texture color support
+* Better mesh splitting method
+
 Instructions:
 1. place your 3D model inside "models" folder
 2. run `python meshExtractor`
