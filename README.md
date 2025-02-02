@@ -5,7 +5,7 @@ Things i plan adding over time:
 * Texture color support
 * Better mesh splitting method
 
-Instructions:
+# Instructions:
 1. place your 3D model inside "models" folder
 2. run `python meshExtractor`
 3. check "output" folder for the results
