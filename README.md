@@ -16,5 +16,8 @@ example:
 local MeshLoader = require(pathToMeshLoader)
 local sampleTextModel = require(pathToThePythonGeneratedModel)
 sampleTextModel = MeshLoader.LoadTextModel(sampleTextModel)
-MeshLoader.CreateTextModelMeshParts(sampleTextModel)
+for i, meshPart: MeshPart in MeshLoader.CreateTextModelMeshParts(sampleTextModel) do
+  meshPart.Parent = workspace
+  meshPart.Anchored = true
+end
 ```
