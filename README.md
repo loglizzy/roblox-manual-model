@@ -15,5 +15,6 @@ example:
 ```luau
 local MeshLoader = require(pathToMeshLoader)
 local sampleTextModel = require(pathToThePythonGeneratedModel)
-MeshLoader.CreateTextModelMeshParts(MeshLoader.LoadTextModel(sampleTextModel)
+sampleTextModel = MeshLoader.LoadTextModel(sampleTextModel)
+MeshLoader.CreateTextModelMeshParts(sampleTextModel)
 ```
