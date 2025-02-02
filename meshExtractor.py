@@ -4,13 +4,17 @@ import os
 
 import trimesh.visual
 
+outputDir = "output"
+if not os.path.exists(outputDir):
+    os.makedirs(outputDir)
+
 def processVertice(vertice: float, decimals=6):
     return np.round(vertice, decimals)
 
 maxTriangles = 20000
 
 model = "soccer_ball.glb"
-modelDir = f"output/{model}"
+modelDir = f"{outputDir}/{model}"
 if not os.path.exists(modelDir):
     os.makedirs(modelDir)
 
